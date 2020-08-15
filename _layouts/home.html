@@ -15,6 +15,7 @@
 
   	<script type="application/ld+json">
   	{"@type":"WebSite","url":"http://localhost:4000/","name":"Seeker Posts","headline":"Seeker Posts","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
     <script>{% include script.js %}</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
@@ -23,7 +24,7 @@
   <body>
     <!-- Main header section (logo/Sitename) -->
     <header>
-      <a href="{{ site.url }}/" style="letter-spacing: 2px;"><p>Seeker Posts<p></a>
+      <a href="{{ site.url }}/" style="letter-spacing: 2px;"><p style="font-family: 'Righteous', cursive;">Seeker Posts<p></a>
     <!-- Navigation bar -->
       <div class="burger">
         <div></div>
@@ -54,7 +55,7 @@
         <div class="sidebar">
           <h3>Explore More:</h2>
             {% for post in site.posts %}
-                <a href="{{ post.url }}"><p style="font-size: 15px;">{{ post.title }}</p></a>
+                <a href="{{ post.url }}"><p style="font-size: 16px;">{{ post.title }}</p></a>
             {% endfor %}
         </div>
 
@@ -93,9 +94,12 @@
             <div class="row_cards">
               {% for post in site.posts %}
               <div class="posts">
-                  <a href="{{ post.url }}"><h1 style="margin-bottom: 15px;">{{ post.title }}</h1></a>
-                  <h5 style="margin-top: 0;"><span style="color: #242424; font-weight: lighter;">{{ post.date | date_to_long_string}} •	{{ post.author }}</span></h5>
+                  <a href="{{ post.url }}"><h1 style="margin-bottom: 30px;">{{ post.title }}</h1></a>
+
+                  <h5 class="post_date">{{ post.date | date_to_long_string}} •	{{ post.author }}</h5>
+
                   <div class="img_section" style="height: 100px;">Image Section</div>
+
                   <p><span style="font-size: 16px;">{{ post.excerpt }}</span></p>
               </div>
               {% endfor %}

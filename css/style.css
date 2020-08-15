@@ -17,7 +17,7 @@ html, body {
 
 /*Body styling*/
 body {
-  font-family: Arial;
+  font-family: 'Lato', Arial;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -72,6 +72,7 @@ header {
 
 /* Navigation-Bar Styling */
 nav {
+  font-family: 'Righteous', sans-serif;
   display: flex;
   position: absolute;
   top: 2px;
@@ -121,8 +122,8 @@ nav a:hover {
   display: none;
   position: absolute;
   cursor: pointer;
-  top: 5px;
-  right: 0;
+  top: 7px;
+  right: 5px;
   width: auto;
   height: auto;
 }
@@ -195,6 +196,12 @@ main {
 
 .posts h1 {
   font-size: 2em;
+}
+
+.post_date {
+  margin-top: 0;
+  color: #242424;
+  font-weight: lighter;
 }
 
 .latest_posts {
@@ -270,11 +277,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   /* border: 1px solid black; */
-  width: 100%;
+  width: 90%;
 }
 
 .card_img_section {
-  width: 700px;
+  width: 100%;
+  max-width: 700px;
   height: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -316,7 +324,25 @@ main {
   #latest_post_img {
     display: none;
   }
+  .row_cards {
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .posts {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .posts p {
+    margin: 20px 20px;
+  }
+  .posts h1 {
+    margin-left: 20px;
+  }
+  .post_date {
+    margin-left: 20px;
+  }
 }
 
 .img_section {
