@@ -201,8 +201,35 @@ main {
   display: flex;
 }
 
-#latest_posts p {
+.latest {
+  padding: 10px 10px 3px 10px;
+  background-color: white;
+}
+
+.latest h5 {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.latest p {
   font-size: 14px;
+  margin-bottom: 13px;
+}
+
+#latest_title {
+  font-size: 16px;
+  margin-bottom: 13px;
+}
+
+.latest a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.latest a:hover {
+  color: #3d2e4d;
+  transition: color;
+  transition-delay: 0.08s;
 }
 
 .content {
