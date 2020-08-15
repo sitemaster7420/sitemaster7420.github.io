@@ -21,16 +21,23 @@
   <body>
     <!-- Main header section (logo/Sitename) -->
     <header>
-      <a href="{{ site.url }}/"><p>Seeker Posts<p></a>
+      <a href="{{ site.url }}/" style="letter-spacing: 2px;"><p>Seeker Posts<p></a>
     <!-- Navigation bar -->
-      <nav>
-        <a href="{{ site.url }}/">Home</a>
-	      <a href="{{ site.url }}/about">About</a>
-	      <a href="#">Link</a>
-	      <a href="#">Link</a>
-	      <a href="#">Link</a>
-      </nav>
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
     </header>
+
+    <nav>
+        <a href="{{ site.url }}/">Home</a>
+        <a href="{{ site.url }}/about">About</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
 
     <main>
       <!-- (Posts and Sidebar) Main content goes here -->
@@ -45,7 +52,7 @@
 
         <div class="post_container">
             <article class="main_card">
-                <div class="imgsection" style="height: 600px; width: 700px; margin: 25px 20px 25px 0; padding-left: 0;">Image Section</div>
+                <img src="/assets/floral.png" height="500" width="700" style="margin: 25px 20px 25px 0; padding-left: 0;">
 
                 <article id="main_card_post" class="posts">
                   <div class="title_card_post">

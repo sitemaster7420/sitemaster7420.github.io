@@ -9,6 +9,7 @@
   }
 }
 
+
 html, body {
   position: relative;
   overflow-x: hidden;
@@ -64,24 +65,23 @@ header {
   font-weight: lighter;
   text-align: left;
   color: white;
-  padding: 14px;
+  padding: 10px;
+  margin: 0;
   background-color: #000000;
 }
 
 /* Navigation-Bar Styling */
 nav {
-  position: absolute;
-  top: 4px;
-  right: 0px;
   display: flex;
+  position: absolute;
+  top: 2px;
+  right: 45px;
   background-color: #000000;
 }
 
 nav a {
   text-decoration: none;
-  text-align: center;
   font-size: 20px;
-  margin: 0;
   color: white;
   padding: 10px 40px;
 }
@@ -90,6 +90,54 @@ nav a:hover {
   color: #12b3db;
 }
 
+@media screen and (max-width: 700px) {
+  nav {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  nav a {
+    text-align: center;
+    letter-spacing: 2px;
+    width: 100%;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  nav a:hover {
+    background-color: #242424;
+  }
+
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .burger {
+      display: block;
+  }
+}
+
+.burger div {
+  height: 3px;
+  width: 25px;
+  margin: 6px;
+  background-color: white;
+}
 
 /* Main content section */
 
@@ -114,6 +162,7 @@ main {
 
 .sidebar a:hover {
   color: #12b3db;
+  text-decoration: underline;
   transition: color;
   transition-delay: 0.08s;
 }
@@ -173,7 +222,6 @@ main {
 
 .title_card_post {
   width: 300px;
-  border: 1px solid black;
 }
 
 .posts {
@@ -206,15 +254,25 @@ main {
 .footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   padding: 40px;
   font-size: 14px;
   background-color: #dfe1e6;
   color: #000000;
+  border: red 1px solid;
 }
 
+/* @media screen and (max-width: 700px) {
+    .footer {
+      flex-direction: column;
+    }
+} */
+
 .footer_content {
-  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  /* border: black 1px solid; */
 }
 
 .footer_content h5, p {
