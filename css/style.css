@@ -55,6 +55,7 @@ header p {
 
 header {
   font-size: 22px;
+  width: 100%;
   font-weight: lighter;
   text-align: left;
   color: white;

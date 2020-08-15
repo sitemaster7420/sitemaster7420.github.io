@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "How React became the next big thing?"
 date:   2020-08-13 19:36:46 +0530
 categories: jekyll update
 author: Aradhya
-excerpt-separator: <!--more-->
+excerpt_separator: <!--more-->
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.<!--more-->
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, <!--more--> but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.<!--more-->
 
 Jekyll requires blog post files to be named according to the following format:
 
