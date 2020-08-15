@@ -9,9 +9,13 @@
   }
 }
 
+html, body {
+  position: relative;
+  overflow-x: hidden;
+}
+
 /*Body styling*/
 body {
-  position: fixed;
   font-family: Arial;
   margin: 0;
   padding: 0;
