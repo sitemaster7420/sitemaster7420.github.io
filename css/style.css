@@ -175,6 +175,13 @@ main {
 }
 
 /*Post title formatting*/
+.posts {
+  flex-basis: 33.333333%;
+  padding: 20px;
+  background-color: white;
+  /* border: 1px solid black; */
+}
+
 .posts a {
   text-decoration: none;
   color: #242424;
@@ -190,6 +197,13 @@ main {
   font-size: 2em;
 }
 
+.latest_posts {
+  display: flex;
+}
+
+#latest_posts p {
+  font-size: 14px;
+}
 
 .content {
   display: flex;
@@ -223,13 +237,6 @@ main {
 
 .title_card_post {
   width: 300px;
-}
-
-.posts {
-  flex-basis: 33.333333%;
-  padding: 20px;
-  background-color: white;
-  /* border: 1px solid black; */
 }
 
 .row_cards {

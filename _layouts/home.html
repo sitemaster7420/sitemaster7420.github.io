@@ -35,9 +35,6 @@
     <nav>
         <a href="{{ site.url }}/">Home</a>
         <a href="{{ site.url }}/about">About</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
     </nav>
 
     <script>
@@ -71,7 +68,25 @@
                   <p style="margin-top: 40px;"><span style="font-size: 16px;">{{ site.posts[0].excerpt }}</span></p>
                 </article>
             </article>
+
+
+            <p style="text-align: center">Latest Posts</p>
             <hr>
+            <div class="latest_posts">
+              {% for post in site.posts limit: 4 %}
+              <div class="posts">
+                  <a href="{{ post.url }}"><p style="font-size: 16px; margin-bottom: 15px;">{{ post.title }}</p></a>
+                  <h5 style="margin-top: 0;"><span style="color: #242424; font-weight: lighter;">{{ post.date | date_to_long_string}}</span></h5>
+                  <a href="{{ post.url }}"><p style="font-size: 16px; margin-bottom: 15px;">{{ post.content | truncatewords: 10 }}</p></a>
+                  <!-- <div id="latest_posts">{{ post.excerpt }}</div> -->
+              </div>
+              {% if post != site.posts[3] %}
+                <hr>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <hr>
+
             <div class="row_cards">
               {% for post in site.posts %}
               <div class="posts">
