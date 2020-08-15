@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>{{ site.title }}</title>
+  	<meta name="generator" content="Jekyll v4.1.1" />
+  	<meta property="og:title" content="Seeker Posts" />
+  	<meta property="og:locale" content="en_US" />
+  	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+  	<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+  	<link rel="canonical" href="http://localhost:4000/" />
+  	<meta property="og:url" content="http://localhost:4000/" />
+  	<meta property="og:site_name" content="Seeker Posts" />
+
+  	<script type="application/ld+json">
+  	{"@type":"WebSite","url":"http://localhost:4000/","name":"Seeker Posts","headline":"Seeker Posts","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- Main header section (logo/Sitename) -->
+    <header>
+      <a href="{{ site.url }}/"><p>Seeker Posts<p></a>
+    <!-- Navigation bar -->
+      <nav>
+        <a href="{{ site.url }}/">Home</a>
+	      <a href="{{ site.url }}/about">About</a>
+	      <a href="#">Link</a>
+	      <a href="#">Link</a>
+	      <a href="#">Link</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- (Posts and Sidebar) Main content goes here -->
+      <div class="content">
+        <div class="sidebar">
+          <h3>Explore More:</h2>
+            {% for post in site.posts %}
+                <a href="{{ post.url }}"><p style="font-size: 15px;">{{ post.title }}</p></a>
+            {% endfor %}
+        </div>
+
+
+        <div class="post_container">
+            <article class="main_card">
+                <div class="imgsection" style="height: 600px; width: 700px; margin: 25px 20px 25px 0; padding-left: 0;">Image Section</div>
+
+                <article id="main_card_post" class="posts">
+                  <div class="title_card_post">
+                    <a href="{{ site.posts[0].url }}"><h1 style="margin-bottom: 15px;">{{ site.posts[0].title }}</h1></a>
+                    <div class="imgsection" style="height: 100px;">Image Section</div>
+                  </div>
+                  <p style="margin-top: 40px;"><span style="font-size: 16px;">{{ site.posts[0].excerpt }}</span></p>
+                </article>
+            </article>
+            <hr>
+            <div class="row_cards">
+              {% for post in site.posts %}
+              <div class="posts">
+                  <a href="{{ post.url }}"><h1 style="margin-bottom: 15px;">{{ post.title }}</h1></a>
+                  <h5 style="margin-top: 0;"><span style="color: #242424; font-weight: lighter;">{{ post.author }}, {{ post.date | date_to_long_string}}</span></h5>
+                  <div class="imgsection" style="height: 100px;">Image Section</div>
+                  <p><span style="font-size: 16px;">{{ post.excerpt }}</span></p>
+              </div>
+              {% endfor %}
+            </div>
+
+        </div>
+
+      </div>
+    </main>
+
+
+
+
+
+    <!-- Footer Section -->
+    <div class="footer">
+
+        <div class="footer_content">
+            <div class="imgsection" style="height: 40px;">Logo</div>
+        </div>
+
+        <div class="footer_content">
+            <p>About</p>
+            <p>Customers</p>
+            <p>Careers</p>
+            <p>Press resources</p>
+        </div>
+
+        <div class="footer_content">
+            <p>Contact Us</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+        </div>
+
+        <div class="footer_content">
+            <h5>Products</h5>
+            <p>Contact Us</p>
+            <p>Terms</p>
+            <p>Privacy</p>
+        </div>
+
+        <div class="footer_content">
+            <h5>Use Cases</h5>
+            <p>Lead Generation</p>
+            <p>Customer Engagement</p>
+            <p>Customer Support</p>
+        </div>
+
+        <div class="footer_content">
+            <h5>Share</h5>
+            <p>Twitter</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+
+    </div>
+  </body>
+</html>
