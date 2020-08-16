@@ -9,6 +9,10 @@
   }
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
 
 html, body {
   position: relative;
@@ -20,7 +24,7 @@ body {
   font-family: 'Lato', Arial;
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 /*Code formatting*/
@@ -72,12 +76,12 @@ header {
 
 #site_title {
   letter-spacing: 2px;
-  font-family: 'Righteous', cursive;
+  font-family: 'Bebas Neue', cursive;
 }
 
 /* Navigation-Bar Styling */
 nav {
-  font-family: 'Righteous', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   display: flex;
   position: absolute;
   top: -2px;
@@ -151,10 +155,10 @@ nav a:hover {
 
   #site_title {
     position: absolute;
+    font-size: 22px;
     left: 45px;
     top: 5px;
     width: 100%;
-    padding-left: 120px;
     margin-left: 0;
   }
 
@@ -272,13 +276,6 @@ main {
   /* border: 1px black solid; */
 }
 
-.main_post {
-  margin: 0;
-  width: 100px;
-  padding: 0;
-  background-color: white;
-}
-
 .main_card {
   display: flex;
   width: 100%;
@@ -314,6 +311,46 @@ main {
   align-items: center;
   overflow: hidden;
   padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+  width: 100vw;
+}
+
+.single_post {
+  max-width: 600px;
+  height: 100%;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.single_post a {
+  text-decoration: none;
+  color: #242424;
+}
+
+.single_post_date {
+  margin-top: 8px;;
+  color: #242424;
+  font-weight: lighter;
+  margin-left: 0;
+  margin-bottom: 2px;
+}
+
+.single_post_author {
+  margin-top: 20px;;
+  color: #242424;
+  font-weight: lighter;
+  margin-left: 0;
+  margin-bottom: 2px;
+}
+
+hr {
+  opacity: 0.4;
 }
 
 .hr_tag {
@@ -370,6 +407,10 @@ main {
   .post_date {
     margin-left: 20px;
   }
+  .single_post {
+    padding: 20px;
+    margin: 0;
+  }
 }
 
 .img_section {
@@ -392,13 +433,9 @@ main {
   font-size: 14px;
   background-color: #dfe1e6;
   color: #000000;
+  margin-top: auto;
 }
 
-/* @media screen and (max-width: 700px) {
-    .footer {
-      flex-direction: column;
-    }
-} */
 
 .footer_content {
   margin-right: auto;

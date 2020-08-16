@@ -22,6 +22,7 @@
   </head>
 
   <body>
+
     <div class="wrapper">
     <!-- Main header section (logo/Sitename) -->
     <header>
@@ -48,63 +49,18 @@
     </script>
 
       <!-- (Posts and Sidebar) Main content goes here -->
-      <div class="content">
-        <div class="sidebar">
-          <h4>Whats's new</h4>
-            {% for post in site.posts %}
-                <a href="{{ post.url }}"><p style="font-size: 14px;">{{ post.title }}</p></a>
-            {% endfor %}
-        </div>
 
-
-        <div class="post_container">
-            <article class="main_card">
-                <div class="card_img_section"><img src="/assets/floral.png"></div>
-
-                <article id="main_card_post" class="posts">
-                  <div class="title_card_post">
-                    <a href="{{ site.posts[0].url }}"><h1 style="margin-bottom: 15px;">{{ site.posts[0].title }}</h1></a>
-                    <div class="img_section" id="latest_post_img" style="height: 100px;">Image Section</div>
-                  </div>
-                  <p style="margin-top: 40px;"><span style="font-size: 16px;">{{ site.posts[0].excerpt }}</span></p>
-                </article>
-            </article>
-            <div class="hr_tag"><hr></div>
-
-            <br>
-            <p style="text-align: center">Latest Posts</p>
-            <hr>
-            <div class="latest_posts">
-              {% for post in site.posts limit: 3 %}
-              <div class="latest">
-                  <a href="{{ post.url }}"><p id="latest_title">{{ post.title }}</p></a>
-                  <h5 style="margin-top: 0; color: #242424; font-weight: lighter;">{{ post.date | date_to_long_string}}</span></h5>
-                  <a href="{{ post.url }}"><p>{{ post.content | truncatewords: 10 }}</p></a>
-              </div>
-              {% if post != site.posts[2] %}
-                <hr>
-              {% endif %}
-              {% endfor %}
-            </div>
-            <hr>
-
-            <div class="row_cards">
-              {% for post in site.posts %}
-              <div class="posts">
-                  <a href="{{ post.url }}"><h1 style="margin-bottom: 30px;">{{ post.title }}</h1></a>
-
-                  <h5 class="post_date">{{ post.date | date_to_long_string}} •	{{ post.author }}</h5>
+              <div class="single_post">
+                  <h1 style="margin-bottom: 30px;">{{ page.title }}</h1>
 
                   <div class="img_section" style="height: 100px;">Image Section</div>
-
-                  <p><span style="font-size: 16px;">{{ post.excerpt }}</span></p>
+                  <h5 class="single_post_author">By {{ page.author }}</h5><hr>
+                  <h5 class="single_post_date">{{ page.date | date_to_long_string}}</h5>
+                  <br>
+                  <p><span style="font-size: 16px;">{{ content }}</span></p>
               </div>
-              {% endfor %}
-            </div>
 
-        </div>
 
-      </div>
 
 
 
@@ -148,9 +104,6 @@
             <p>Facebook</p>
             <p>Instagram</p>
         </div>
-      </div>
     </div>
-
-    
   </body>
 </html>
