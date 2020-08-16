@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<title>{{ site.title }}</title>
-  	<meta name="generator" content="Jekyll v4.1.1" />
-  	<meta property="og:title" content="Seeker Posts" />
-  	<meta property="og:locale" content="en_US" />
-  	<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-  	<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-  	<link rel="canonical" href="http://localhost:4000/" />
-  	<meta property="og:url" content="http://localhost:4000/" />
-  	<meta property="og:site_name" content="Seeker Posts" />
 
-  	<script type="application/ld+json">
-  	{"@type":"WebSite","url":"http://localhost:4000/","name":"Seeker Posts","headline":"Seeker Posts","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@context":"https://schema.org"}</script>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css">
-    <script>{% include script.js %}</script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-  </head>
+  {% include head.html %}
 
   <body>
     <div class="wrapper">
@@ -59,48 +41,7 @@
 
 
 
-      <!-- Footer Section -->
-      <div class="footer">
-
-          <div class="footer_content">
-              <div class="imgsection" style="height: 40px;">Logo</div>
-          </div>
-
-          <div class="footer_content">
-              <p>About</p>
-              <p>Customers</p>
-              <p>Careers</p>
-              <p>Press resources</p>
-          </div>
-
-          <div class="footer_content">
-              <p>Contact Us</p>
-              <p>Terms</p>
-              <p>Privacy</p>
-          </div>
-
-          <div class="footer_content">
-              <h5>Products</h5>
-              <p>Contact Us</p>
-              <p>Terms</p>
-              <p>Privacy</p>
-          </div>
-
-          <div class="footer_content">
-              <h5>Contribute</h5>
-              <p>Write an</p>
-              <p>Customer Engagement</p>
-              <p>Customer Support</p>
-          </div>
-
-          <div class="footer_content">
-              <h5>Share</h5>
-              <p>Twitter</p>
-              <p>Facebook</p>
-              <p>Instagram</p>
-          </div>
-
-      </div>
+      {% include footer.html %}
     </div>
   </body>
 </html>
