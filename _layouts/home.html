@@ -27,13 +27,16 @@
           });
         });
     </script>
-
+    <div class="top_ads"></div>
       <!-- (Posts and Sidebar) Main content goes here -->
       <div class="content">
         <div class="sidebar">
           <h4>Whats's new</h4>
             {% for post in site.posts %}
-                <a href="{{ post.url }}"><p style="font-size: 14px;">{{ post.title }}</p></a>
+                <div class="sidebar_posts">
+                  <div class="sidebar_img_section">Image Section</div>
+                  <div class="sidebar_post_title"><a href="{{ post.url }}"><p style="font-size: 14px;">{{ post.title }}</p></a></div>
+                </div>
             {% endfor %}
         </div>
 
