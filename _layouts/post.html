@@ -8,6 +8,12 @@
     <!-- Main header section (logo/Sitename) -->
     <header>
       <a href="{{ site.url }}/"><p id="site_title">Seeker Posts<p></a>
+      <div class="newsletter_header">
+        <form action="https://formspree.io/xvownpqk" method="POST">
+          <input type="email" id="newsletter_email" placeholder="Your Email" name="Email" required>
+          <input type="submit" id="newsletter_submit" value="Subscribe">
+        </form>
+      </div>
     <!-- Navigation bar -->
       <div class="burger">
         <div></div>
@@ -20,7 +26,12 @@
         <a href="{{ site.url }}/">Home</a>
         <a href="{{ site.url }}/about">About</a>
     </nav>
-
+    <div class="newsletter">
+      <form action="https://formspree.io/xvownpqk" method="POST">
+        <input type="email" id="newsletter_email" placeholder="Your email goes here" name="Email" required>
+        <input type="submit" id="newsletter_submit" value="Subscribe">
+      </form>
+    </div>
     <script>
         $(document).ready(function() {
           $('.burger').click(function() {
