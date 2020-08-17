@@ -480,6 +480,7 @@ hr {
     font-weight: bolder;
     border-radius: 3px;
     font-size: 8px;
+    height: 22px;
   }
 }
 /* Media queries for major content */
