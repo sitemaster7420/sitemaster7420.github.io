@@ -34,7 +34,7 @@ pre, code {
 
 pre, code { font-size: 15px; border: 1px solid #e8e8e8; border-radius: 3px; background: #EFEFED;}
 
-code { padding: 1px 5px; }
+code { padding: 0px 4px; }
 
 pre { padding: 8px 12px; overflow-x: auto; }
 
@@ -242,6 +242,7 @@ nav a:hover {
   font-family: 'Roboto', sans-serif;
   width: 180px;
   height: 30px;
+  border-radius: 3px;
 }
 
 #newsletter_submit {
@@ -270,6 +271,7 @@ nav a:hover {
   flex-basis: 33.333333%;
   padding: 20px;
   background-color: white;
+  font-family: 'Roboto', arial;
   /* border: 1px solid black; */
 }
 
@@ -404,6 +406,11 @@ nav a:hover {
 .single_post a {
   text-decoration: none;
   color: #242424;
+}
+
+single_post p {
+  font-family: 'Lato', arial;
+  line-height: 150%;
 }
 
 .single_post_date {
@@ -545,6 +552,7 @@ hr {
     width: 100%;
     height: 300px;
     margin-bottom: 0;
+    margin-top: 0;
   }
   .content {
     padding: 0;

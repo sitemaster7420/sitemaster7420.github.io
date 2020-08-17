@@ -21,7 +21,7 @@
 title: Seeker Posts
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  We write to keep you updated with the latest trends, news, topics and much more.
+  Find awesome reads and dive deep into a range of topics in the form of our blogs. Stay updated with the latest trends in health, fitness, technology, hobbies and various other arenas.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
