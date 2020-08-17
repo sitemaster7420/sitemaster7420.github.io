@@ -81,6 +81,13 @@ header {
 }
 
 /* Navigation-Bar Styling */
+.newsletter {
+  height: 500px;
+  width: 400px;
+  background-color: white;
+  border: 1px solid black;
+}
+
 nav {
   font-family: 'Bebas Neue', sans-serif;
   display: flex;
@@ -404,6 +411,7 @@ hr {
   width: 100%;
   padding: 40px;
   font-size: 14px;
+  font-family: 'Bebas Neue';
   background-color: #dfe1e6;
   color: #000000;
   margin-top: auto;
