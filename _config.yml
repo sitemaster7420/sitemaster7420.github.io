@@ -23,7 +23,7 @@ title: Seeker Posts
 description: >- # this means to ignore newlines until "baseurl:"
   Find awesome reads and dive deep into a range of topics in the form of our blogs. Stay updated with the latest trends in health, fitness, technology, hobbies and various other arenas.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://seekerposts.online" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
@@ -31,15 +31,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#       type: "post"
-#     values:
-#       layout: "post"
+defaults:
+  -
+    scope:
+      path: "_posts/blog"
+      type: "post"
+    values:
+      layout: "post"
+      author: Editor
+      categories: blog
+
 
 
 

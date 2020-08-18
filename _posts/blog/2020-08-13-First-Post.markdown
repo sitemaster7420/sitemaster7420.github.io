@@ -1,9 +1,7 @@
 ---
-layout: post
-title:  "Here's how you can create a passive income source"
+title:  "Why doctors recommend us Green Tea"
 date:   2020-08-13 19:36:46 +0530
-categories: jekyll update
-author: Aradhya
+categories: blog
 excerpt_separator: <!--more-->
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, <!--more--> but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.<!--more-->
